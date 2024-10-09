@@ -11,7 +11,7 @@ const SearchBox = () => {
   };
 
   return (
-    <div assName={s.searchContainer}>
+    <div className={s.searchContainer}>
       <label className={s.text}>Find contacts by name</label>
       <input className={s.input} type="text" onChange={handleChange} />
     </div>

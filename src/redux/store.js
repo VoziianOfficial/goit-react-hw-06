@@ -8,7 +8,7 @@ import filtersReducer from "./filtersSlice";
 const persistConfig = {
   key: "root",
   storage,
-  whitelist: ["contacts"], // сохраняем только слайс контактов
+  whitelist: ["items"], // сохраняем только слайс контактов
 };
 
 // Обертка для редюсера с persist

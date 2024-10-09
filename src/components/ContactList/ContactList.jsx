@@ -16,9 +16,12 @@ const ContactList = () => {
   return (
     <ul className={s.contactList}>
       {filteredContacts.map((contact) => (
-        <li key={contact.id}>
+        <li className={s.contactItem} key={contact.id}>
           {contact.name}: {contact.number}
-          <button onClick={() => dispatch(deleteContact(contact.id))}>
+          <button
+            className={s.deleteBtn}
+            onClick={() => dispatch(deleteContact(contact.id))}
+          >
             Delete
           </button>
         </li>

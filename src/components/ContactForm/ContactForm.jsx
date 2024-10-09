@@ -25,8 +25,8 @@ const ContactForm = () => {
       onSubmit={handleSubmit}
     >
       {() => (
-        <Form className={s.сontactForm}>
-          <label lassName={s.p}>Name</label>
+        <Form className={s.contactForm}>
+          <label className={s.p}>Name</label>
           <Field className={s.formInput} name="name" type="text" />
           <ErrorMessage className={s.errorMessage} name="name" />
 
